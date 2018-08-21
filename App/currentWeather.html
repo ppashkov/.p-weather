@@ -1,0 +1,12 @@
+<img ng-src="{{icon}}" class="currenticon"> <br>
+<img src="img/30.svg" ng-show="loading">
+<span ng-show="currshow">{{ cityname + ", " + countryCode + ": " + temp + "°" }}</span>
+<a href="" ng-click="addremove(cityname, countryCode)"> <img ng-src="{{favico}}" class="fvicon" ng-show="currshow"></a>
+<!-- <a href="" ng-click="removecity(cityname, countryCode)"> <img src="img/fav3.png" class="fvicon"></a>
+<a href="" ng-click="addcity(cityname, countryCode)"> <img src="img/fav2.png" class="fvicon"></a> -->
+<input type="text" class="form-control" name="" ng-model="citysrch" ng-class="searchclass"> 
+<button class="btn btn-secondary" ng-click="searchCity(citysrch)" >Поиск</button> 
+<button class="btn btn-primary" ng-click="weatherMoreInfo(cityname, countryCode)">Подробнее</button>
+<button class="btn btn-fourty" ng-click="goFav()">Избранное</button>
+
+

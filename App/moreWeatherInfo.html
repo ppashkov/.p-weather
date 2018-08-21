@@ -1,0 +1,53 @@
+<div>
+ <div class="nav"> <a href="" ng-click="backSimpleDisplay(cityname, country)"> < {{ cityname + ", " + country}} </a>
+<a href="" ng-click="goFav()">Избранное</a>
+ </div>
+<div class="preloader"> <img src="img/30.svg" ng-show="loading"></div>
+ <div class="dayrow" ng-show="currshow">
+ 	<div class="day">
+ 		<div class="d_day">Сегодня</div>
+ 		<div class="d_date">{{ d1temp }}</div>
+ 		<div class="d_icon"><img ng-src="{{d1icon}}"></div>
+ 		<div class="d_temp">{{ d1temp }}°</div>
+ 		<div class="d_pressure">Давление: {{ d1pressure }} мм </div>
+ 		<div class="d_humidity">Влажность: {{ d1humidity }} % </div>
+ 		<div class="d_wind">Ветер: {{ d1wind }} м/с </div>
+ 	</div>
+ 	<div class="day">
+ 		<div class="d_day">Завтра</div>
+ 		<div class="d_date">{{d2}}</div>
+ 		<div class="d_icon"><img ng-src="{{d2icon}}"></div>
+ 		<div class="d_temp">{{ d2temp }}°</div>
+ 		<div class="d_pressure">Давление: {{ d2pressure }} мм </div>
+ 		<div class="d_humidity">Влажность: {{ d2humidity }} % </div>
+ 		<div class="d_wind">Ветер: {{ d2wind }}  м/с </div>
+ 	</div>	
+ 	<div class="day">
+ 		<div class="d_day">{{ d3n }}</div>
+ 		<div class="d_date">{{d3}}</div>
+ 		<div class="d_icon"><img ng-src="{{d3icon}}"></div>
+ 		<div class="d_temp">{{ d3temp }}°</div>
+ 		<div class="d_pressure">Давление: {{ d3pressure }} мм </div>
+ 		<div class="d_humidity">Влажность: {{ d3humidity }} % </div>
+ 		<div class="d_wind">Ветер: {{ d3wind }}  м/с </div>
+ 	</div>
+ 	<div class="day">
+ 		<div class="d_day">{{ d4n }}</div>
+ 		<div class="d_date">{{d4}}</div>
+ 		<div class="d_icon"><img ng-src="{{d4icon}}"></div>
+ 		<div class="d_temp">{{ d4temp }}°</div>
+ 		<div class="d_pressure">Давление: {{ d4pressure }} мм </div>
+ 		<div class="d_humidity">Влажность: {{ d4humidity }} % </div>
+ 		<div class="d_wind">Ветер: {{ d4wind }}  м/с </div>
+ 	</div>
+ 	<div class="day">
+ 		<div class="d_day">{{ d5n }}</div>
+ 		<div class="d_date">{{d5}}</div>
+ 		<div class="d_icon"><img ng-src="{{d5icon}}"></div>
+ 		<div class="d_temp">{{ d5temp }}°</div>
+ 		<div class="d_pressure">Давление: {{ d5pressure }} мм</div>
+ 		<div class="d_humidity">Влажность: {{ d5humidity }} % </div>
+ 		<div class="d_wind">Ветер: {{ d5wind }}  м/с </div>
+ 	</div>
+ </div>
+</div>
